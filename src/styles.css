@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
+  font-size: 14px;
+}
+:root {
+  --primary-color: #42b097;
+  --primary-color-light: #4bbba229;
+  --secondary-color: #ff8551;
+  --secondary-color-dark: #f17038;
+  --gray-light: #5c5b5b;
+}
+/* -------------Heading Tag------------ */
+h1 {
+  font-size: 61px;
+  font-weight: 600;
+  line-height: 1;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+h6 {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+/* -------------Typography------------ */
+a {
+  color: black;
+  text-decoration: none;
+}
+p {
+  color: var(--gray-light);
+  font-family: "Inter", sans-serif;
+}
+b {
+  font-weight: 500;
+}
+span {
+  color: var(--secondary-color);
+}
+/* -------------Button------------ */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--secondary-color);
+  --bs-btn-border-color: var(--secondary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--secondary-color-dark);
+  --bs-btn-hover-border-color: var(--secondary-color-dark);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--secondary-color-dark);
+  --bs-btn-active-border-color: var(--secondary-color-dark);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--secondary-color-dark);
+  --bs-btn-disabled-border-color: var(--secondary-color-dark);
+}
+/* -------------section padding------------ */
+.section-padding {
+  padding: 70px 0;
+}

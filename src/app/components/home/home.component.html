@@ -1,0 +1,264 @@
+<section>
+  <div class="banner-main d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <h6>WELCOME TO SEAMLESS</h6>
+          <h1>We help your brand to grow on social media.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            quod quaerat fugit doloribus! Architecto magnam cum mollitia
+            distinctio rerum nobis dignissimos ab iste doloremque corrupti,
+            totam, repudiandae perspiciatis dicta reprehenderit?
+          </p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+        <div class="col">
+          <ng-lottie [options]="options" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="review-main section-padding mb-5">
+    <div class="container py-4 px-5 rounded">
+      <div class="row d-flex align-items-center">
+        <div class="col border-end">
+          <div class="row">
+            <div class="col">
+              <h1>49k+</h1>
+              <h5>Project Done</h5>
+            </div>
+            <div class="col">
+              <h1>49k+</h1>
+              <h5>Project Done</h5>
+            </div>
+            <div class="col">
+              <h1>49k+</h1>
+              <h5>Project Done</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col ms-4">
+          <ngb-carousel
+            #carousel
+            [interval]="1500"
+            [pauseOnHover]="false"
+            [pauseOnFocus]="false"
+            [showNavigationArrows]="false"
+            [showNavigationIndicators]="false"
+          >
+            @for (img of items; track img; let i = $index) {
+            <ng-template ngbSlide>
+              <div class="review">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Distinctio tempore fuga facilis atque! In, ab? Quam numquam
+                  harum qui soluta aut perferendis nam, minima provident
+                  accusamus perspiciatis temporibus. Voluptatum, totam.
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="assets\images\avatar.jpg"
+                    class="img-fluid rounded-circle me-2"
+                    width="50"
+                  />
+                  <p class="m-0">
+                    <b>James Anderson</b>
+                  </p>
+                </div>
+              </div>
+            </ng-template>
+            }
+          </ngb-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="about-main section-padding">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col">
+          <div
+            class="img-section rounded p-5 d-flex align-items-center justify-content-center"
+          >
+            <img src="assets\images\full.png" class="img-fluid" />
+            <div class="experience">
+              <h1>15+</h1>
+              <p><b>YEARS OF EXPERIENCE</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col ms-5">
+          <h6>WHO WE ARE</h6>
+          <h2>Today’s a better time to connect with people on social media.</h2>
+          <p class="mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
+            mollitia doloremque? Animi temporibus obcaecati culpa ratione
+            placeat, voluptas dolore, odio, fugiat quos quas assumenda minus
+            saepe.
+          </p>
+          <div class="row g-4 mt-4">
+            @for (item of items | slice : 1 : 7 ; track $index) {
+            <div class="col-6 d-flex">
+              <i class="bi bi-facebook rounded about-icon"></i>
+              <div class="ms-3">
+                <h2 style="color: var(--primary-color)">6,887+</h2>
+                <p class="m-0"><b>Account Manage</b></p>
+              </div>
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr />
+<section>
+  <div class="trusted-main section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center mb-5">
+          <h2>
+            Trusted by +650,000 Company and +3,000 <br />
+            best Marketer teams around the world
+          </h2>
+        </div>
+        <div class="col-12 mt-5">
+          <owl-carousel-o [options]="customOptions">
+            @for (item of items; track $index) {
+            <ng-container>
+              <ng-template carouselSlide>
+                <div>
+                  <img src="assets\images\slider-1.png" class="img-fluid" />
+                </div>
+              </ng-template>
+            </ng-container>
+            }
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="value-main mt-4">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div
+          class="col-6"
+          style="z-index: 1; text-align: center; padding: 80px 0 0"
+        >
+          <h6 style="color: #fff !important">OUR VALUE</h6>
+          <h2 style="color: #fff !important" class="mt-5">
+            The right decision for your marketing strategy
+          </h2>
+          <p style="color: #fff !important" class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia
+            quidem quod nemo perspiciatis facilis voluptatem error, rem odit
+            voluptatum quas
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="our-vision-main section-padding mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div
+            class="our-vision-card d-flex align-items-center flex-column justify-content-center p-5"
+          >
+            <div class="our-vision-card-bg"></div>
+            <i class="bi bi-eye-fill"></i>
+            <h3 style="color: #fff !important" class="mt-5">Our Vision</h3>
+            <p style="color: #fff !important" class="mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              dolores, ut sequi optio eveniet modi tempora nesciunt neque eius
+              dignissimos maxime
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div
+            class="our-vision-card d-flex align-items-center flex-column justify-content-center p-5"
+          >
+            <div
+              class="our-vision-card-bg"
+              style="background-color: var(--secondary-color)"
+            ></div>
+            <i
+              class="bi bi-rocket-takeoff-fill"
+              style="background-color: var(--primary-color); color: #fff"
+            ></i>
+            <h3 style="color: #fff !important" class="mt-5">Our Vision</h3>
+            <p style="color: #fff !important" class="mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              dolores, ut sequi optio eveniet modi tempora nesciunt neque eius
+              dignissimos maxime
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div
+            class="our-vision-card d-flex align-items-center flex-column justify-content-center p-5"
+          >
+            <div class="our-vision-card-bg"></div>
+            <i class="bi bi-megaphone-fill"></i>
+            <h3 style="color: #fff !important" class="mt-5">Our Vision</h3>
+            <p style="color: #fff !important" class="mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              dolores, ut sequi optio eveniet modi tempora nesciunt neque eius
+              dignissimos maxime
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="about-main section-padding">
+    <div class="container mt-5">
+      <div class="row d-flex align-items-center pt-5">
+        <div class="col">
+          <div
+            class="img-section rounded  d-flex align-items-center justify-content-center"
+          >
+            <img src="assets\images\accent-3d.png" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col ms-5">
+          <h2>
+            Pioneer of Social Media Marketing Excellence and Discover the
+            Advantages with Us
+          </h2>
+          <p class="mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
+            mollitia doloremque? Animi temporibus obcaecati culpa ratione
+            placeat, voluptas dolore, odio, fugiat quos quas assumenda minus
+            saepe.
+          </p>
+          <hr />
+          <div class="row mt-4">
+            @for (item of items | slice : 1 : 8 ; track $index) {
+            <div class="col-6 d-flex align-items-centerc">
+              <i
+                class="bi bi-check-circle-fill rounded me-2"
+                style="color: var(--primary-color)"
+              ></i>
+              <p>Expertise in Marketing Solutions</p>
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+nav .container {
+  position: relative;
+}
+nav .container .row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav-link {
+  color: #3c3c3c;
+  font-weight: 500;
+}

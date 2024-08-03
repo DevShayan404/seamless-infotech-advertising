@@ -1,0 +1,141 @@
+.banner-main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../assets/images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  /* background-color: #4bbba24f; */
+  background-color: var(--primary-color-light);
+}
+.banner-main h6 {
+  background: #fff;
+  padding: 4px 10px;
+  width: max-content;
+  border-radius: 20px;
+}
+/* ///////////////////////////////////// */
+.review-main {
+  position: relative;
+}
+.review-main .container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background: linear-gradient(
+    130deg,
+    #42b097 49%,
+    #2db5df 100%
+  );
+}
+.review-main h1,
+.review-main h5,
+.review-main p {
+  color: #fff;
+}
+.review {
+  position: relative;
+}
+.review::after {
+  content: "\f6b0";
+  font-family: bootstrap-icons !important;
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  font-size: 56px;
+  transform: rotate(180deg);
+  color: #00000040;
+}
+/* ///////////////////////////////////// */
+.about-main .about-icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 18px;
+  font-size: 30px;
+  background: var(--primary-color-light);
+  color: var(--primary-color);
+}
+/* ///////////////////////////////////// */
+.value-main {
+  background-image: url("../../../assets/images/our-value.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+.value-main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  background: #000000a3;
+}
+/* ///////////////////////////////////// */
+.our-vision-main {
+  position: relative;
+}
+
+.our-vision-main .container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.our-vision-main .our-vision-card {
+  position: relative;
+  text-align: center;
+}
+.our-vision-card-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  text-align: center;
+  transform: skew(-4deg, 2deg);
+  border-radius: 18px;
+  z-index: -1;
+}
+.our-vision-main .our-vision-card i {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+  background-color: #fff;
+  font-size: 42px;
+  border-radius: 100%;
+  padding: 14px 24px;
+  color: var(--primary-color);
+}
+
+.img-section {
+  background-color: var(--primary-color-light);
+  position: relative;
+}
+.img-section .experience {
+  position: absolute;
+  top: -35px;
+  left: -50px;
+  background: linear-gradient(
+    330deg,
+    rgba(66, 176, 151, 1) 10%,
+    rgba(93, 188, 166, 1) 38%,
+    rgba(203, 235, 228, 1) 100%
+  );
+  padding: 55px 30px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.img-section .experience p {
+  color: #fff;
+}
