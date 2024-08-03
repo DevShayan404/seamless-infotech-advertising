@@ -229,7 +229,7 @@
       <div class="row d-flex align-items-center pt-5">
         <div class="col">
           <div
-            class="img-section rounded  d-flex align-items-center justify-content-center"
+            class="img-section rounded d-flex align-items-center justify-content-center"
           >
             <img src="assets\images\accent-3d.png" class="img-fluid" />
           </div>
@@ -258,6 +258,72 @@
             }
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="services-main section-padding mt-5">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-5 text-center">
+          <h6>WHAT WE OFFER</h6>
+          <h2>Elevate Your Brand Presence and Amplify Engagement</h2>
+        </div>
+        <div class="col-12 mt-5">
+          <div class="row g-4">
+            @for (item of items | slice:0:6; track $index) {
+            <div class="col-4">
+              <div class="service-card">
+                <div class="inner p-5">
+                  <i class="bi bi-handbag-fill"></i>
+                  <h3 class="mt-4">Product Promotion</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <div class="text-center">
+                    <p style="margin-top: 100px">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Ex, quam facere. Impedit reiciendis repellat vitae aliquam
+                      quas quidem similique dolores possimus
+                    </p>
+                    <button class="btn btn-primary mt-2">Learn more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="progress-bar-main">
+    <div class="overlay"></div>
+    <div class="container z-2">
+      <div class="row">
+        @for (item of items | slice : 0:4; track $index) {
+        <div class="col d-flex flex-column align-items-center">
+          <circle-progress
+            [showSubtitle]="false"
+            [showBackground]="false"
+            [showInnerStroke]="false"
+            [percent]="85"
+            [radius]="52"
+            [outerStrokeWidth]="8"
+            [animation]="true"
+            [animationDuration]="300"
+            titleFontWeight="500"
+            titleColor="#fff"
+            unitsColor="#fff"
+            outerStrokeColor="#2db5df"
+            [outerStrokeGradient]="true"
+            outerStrokeGradientStopColor="#42b097"
+          ></circle-progress>
+          <h4 class="mt-2" style="color: #fff">Improving Brand</h4>
+        </div>
+        }
       </div>
     </div>
   </div>

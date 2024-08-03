@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: "Fredoka", sans-serif;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 :root {
   --primary-color: #42b097;

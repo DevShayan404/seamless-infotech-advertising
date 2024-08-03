@@ -1,14 +1,29 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ModuleWithProviders, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NgbCarousel, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 import { LottieComponent, AnimationOptions } from 'ngx-lottie';
 import { CommonModule } from '@angular/common';
 
+// Import ng-circle-progress
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule, NgbCarouselModule, LottieComponent, CarouselModule,CommonModule],
+  imports: [
+    RouterModule,
+    NgbCarouselModule,
+    LottieComponent,
+    CarouselModule,
+    CommonModule,
+    NgCircleProgressModule,
+  ],
+  providers: [
+    (
+      NgCircleProgressModule.forRoot() as ModuleWithProviders<NgCircleProgressModule>
+    ).providers!,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -73,4 +88,5 @@ export class HomeComponent {
     navText: ['', ''],
     nav: false,
   };
+
 }
