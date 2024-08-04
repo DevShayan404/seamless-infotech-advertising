@@ -48,17 +48,27 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  padding: 18px;
-  font-size: 30px;
-  background: var(--primary-color-light);
-  color: var(--primary-color);
+  padding: 16px;
+  font-size: 28px;
+  background: linear-gradient(130deg, #42b097 49%, #2db5df 100%);
+  color: #fff;
+}
+.about-main .choose-us-icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0px 22px;
+  font-size: 28px;
+  background: linear-gradient(130deg, #42b097 49%, #2db5df 100%);
+  color: #fff;
 }
 /* ///////////////////////////////////// */
 .value-main {
-  background-image: url("../../../assets/images/our-value.jpg");
+  background-image: url("../../../assets/images/value.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   width: 100%;
   height: 70vh;
   position: relative;
@@ -111,7 +121,8 @@
   color: var(--primary-color);
 }
 /* ///////////////////////////////////// */
-.services-main {
+.services-main,
+.featured-main {
   width: 100%;
   height: max-content;
   background-image: url("../../../assets/images/banner-bg.png");
@@ -169,10 +180,14 @@
   background-color: rgba(0, 0, 0, 0.603);
 }
 /* ///////////////////////////////////// */
+.featured-card {
+  border: 1px solid red;
+  overflow: hidden;
+}
 /* ///////////////////////////////////// */
 /* ///////////////////////////////////// */
 .img-section {
-  background-color: var(--primary-color-light);
+  /* background-color: var(--primary-color-light); */
   position: relative;
 }
 .img-section .experience {

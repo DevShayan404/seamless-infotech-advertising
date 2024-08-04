@@ -297,7 +297,6 @@
     </div>
   </div>
 </section>
-
 <section>
   <div class="progress-bar-main">
     <div class="overlay"></div>
@@ -324,6 +323,77 @@
           <h4 class="mt-2" style="color: #fff">Improving Brand</h4>
         </div>
         }
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="about-main section-padding">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col me-5">
+          <h6>WHO CHOOSE US</h6>
+          <h2>Optimize your social efforts for greater impact.</h2>
+          <p class="mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
+            mollitia doloremque? Animi temporibus obcaecati culpa ratione
+            placeat, voluptas dolore, odio, fugiat quos quas assumenda minus
+            saepe.
+          </p>
+          <div class="row g-4 mt-4">
+            @for (item of items | slice : 1 : 4 ; track $index) {
+            <div class="col-12 d-flex">
+              <i class="bi bi-headset rounded-circle choose-us-icon"></i>
+              <div class="ms-3">
+                <h4>Marketing Expert</h4>
+                <p class="m-0">
+                  Donec euismod egestas sem sagittis odio ex quisque ad dapibus
+                  consectetuer habitasse phasellus nulla
+                </p>
+              </div>
+            </div>
+            }
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="img-section rounded p-5 d-flex align-items-center justify-content-center"
+          >
+            <img src="assets\images\full.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="featured-main section-padding">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-5 text-center">
+          <h6>FEATURED PROJECT</h6>
+          <h2>Elevate Your Brand Presence and Amplify Engagement</h2>
+        </div>
+        <div class="col-12 mt-5">
+          <div class="row g-4">
+            @for (item of items | slice:0:4; track $index) {
+            <div class="col-4">
+              <div class="featured-card rounded">
+                <img src="assets\images\featured.jpg" class="img-fluid" />
+                <div class="content">
+                  <h6>Managing online promoter</h6>
+                  <h5>Hotels and Resorts</h5>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laudantium asperiores culpa saepe itaque.
+                  </p>
+                  <button class="btn btn-primary">Learn more</button>
+                </div>
+              </div>
+            </div>
+            }
+          </div>
+        </div>
       </div>
     </div>
   </div>
