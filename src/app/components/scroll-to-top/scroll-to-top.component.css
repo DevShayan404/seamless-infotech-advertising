@@ -1,0 +1,19 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border: none;
+  background: linear-gradient(130deg, #42b097 49%, #2db5df 100%);
+  color: #fff;
+  border-radius: 100%;
+  padding: 7px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.3s ease-in-out;
+  z-index: 999;
+}
+.scroll-to-top.show {
+  display: block;
+}
+.scroll-to-top i {
+  font-size: 18px;
+}
