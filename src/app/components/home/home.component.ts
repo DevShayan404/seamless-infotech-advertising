@@ -1,4 +1,9 @@
-import { Component, ModuleWithProviders, ViewChild } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  ModuleWithProviders,
+  ViewChild,
+} from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NgbCarousel, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
@@ -89,4 +94,13 @@ export class HomeComponent {
     nav: false,
   };
 
+  counter: number = 0;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const yOffset = window.scrollY;
+    const scrollTopButtonVisibility = yOffset > 3850;
+    if (scrollTopButtonVisibility) {
+      this.counter = 90;
+    }
+  }
 }
