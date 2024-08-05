@@ -88,13 +88,13 @@
             <img src="assets\images\full.png" class="img-fluid" />
             <div class="experience">
               <h1>15+</h1>
-              <p><b>YEARS OF EXPERIENCE</b></p>
+              <p ><b>YEARS OF EXPERIENCE</b></p>
             </div>
           </div>
         </div>
         <div class="col ms-5">
           <h6>WHO WE ARE</h6>
-          <h2>Today’s a better time to connect with people on social media.</h2>
+          <h2 data-aos="fade-up">Today’s a better time to connect with people on social media.</h2>
           <p class="mt-4">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
             mollitia doloremque? Animi temporibus obcaecati culpa ratione
@@ -376,18 +376,18 @@
         </div>
         <div class="col-12 mt-5">
           <div class="row g-4">
-            @for (item of items | slice:0:4; track $index) {
+            @for (item of items | slice:0:6; track $index) {
             <div class="col-4">
-              <div class="featured-card rounded">
+              <div class="featured-card rounded-4">
                 <img src="assets\images\featured.jpg" class="img-fluid" />
-                <div class="content">
-                  <h6>Managing online promoter</h6>
-                  <h5>Hotels and Resorts</h5>
+                <div class="content p-4">
+                  <h6 style="font-size: 14px">Managing online promoter</h6>
+                  <h5 class="mt-4">Hotels and Resorts</h5>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Laudantium asperiores culpa saepe itaque.
                   </p>
-                  <button class="btn btn-primary">Learn more</button>
+                  <button class="btn btn-primary mt-4">Learn more</button>
                 </div>
               </div>
             </div>
