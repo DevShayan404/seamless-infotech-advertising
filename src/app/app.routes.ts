@@ -7,10 +7,10 @@ export const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'test',
+    path: 'contact-us',
     loadComponent: () =>
-      import('./components/navbar/navbar.component').then(
-        (c) => c.NavbarComponent
+      import('./components/contact-us/contact-us.component').then(
+        (c) => c.ContactUsComponent
       ),
   },
 ];
