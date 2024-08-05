@@ -9,6 +9,10 @@
   font-size: 14px;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --primary-color: #42b097;
   --primary-color-light: #4bbba229;
@@ -45,6 +49,10 @@ b {
 span {
   color: var(--secondary-color);
 }
+strong {
+  font-size: 16px;
+  font-weight: 500;
+}
 /* -------------Button------------ */
 .btn-primary {
   --bs-btn-color: #fff;
@@ -62,7 +70,23 @@ span {
   --bs-btn-disabled-bg: var(--secondary-color-dark);
   --bs-btn-disabled-border-color: var(--secondary-color-dark);
 }
+/* -------------li------------ */
+ul {
+  margin: 6px 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+li a {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
 /* -------------section padding------------ */
 .section-padding {
   padding: 70px 0;
+}
+.section-padding-last {
+  padding: 70px 0 160px;
 }
