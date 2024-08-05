@@ -161,7 +161,7 @@
 /* ///////////////////////////////////// */
 .progress-bar-main {
   background-image: url("../../../assets/images/progress-bar-bg.jpg");
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -202,7 +202,6 @@
 .featured-card:hover .content {
   transform: translateY(-27%);
 }
-/* ///////////////////////////////////// */
 /* ///////////////////////////////////// */
 .img-section {
   background-color: var(--primary-color-light);
