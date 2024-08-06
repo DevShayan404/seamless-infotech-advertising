@@ -4,6 +4,7 @@ import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
     NavbarComponent,
     FooterComponent,
     ScrollToTopComponent,
+    ContactUsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

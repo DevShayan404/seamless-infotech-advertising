@@ -1,0 +1,44 @@
+.header {
+  min-height: 60vh;
+  border-radius: 0 0 50px;
+  background: linear-gradient(
+    0deg,
+    rgba(156, 218, 204, 1) 0%,
+    rgba(181, 228, 217, 1) 29%,
+    rgba(214, 240, 234, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.header .container {
+  position: relative;
+}
+.header .container img {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-10%, 55%);
+  
+}
+.form-main form {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0px 0px 5px rgba(66, 176, 151, 0.1);
+}
+.form-main i {
+  background: linear-gradient(130deg, #42b097 49%, #2db5df 100%);
+  font-size: 16px;
+  border-radius: 100%;
+  padding: 10px 14px;
+  color: #fff;
+  height: max-content;
+}
+.map-main {
+  width: 100%;
+  background-image: url("../../../assets/images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: var(--primary-color-light);
+}
