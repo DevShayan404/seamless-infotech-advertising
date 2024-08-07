@@ -4,27 +4,35 @@
       <div class="col">
         <img
           src="assets\images\seamless-logo.png"
-          width="240"
           class="image-fluid"
           routerLink=""
         />
       </div>
-      <div class="col d-flex justify-content-end">
-        <ul class="nav me-4">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="contact-us">Contact Us</a>
-          </li>
-        </ul>
-        <button class="btn btn-primary">Get Qoute</button>
+      <div class="col d-none d-sm-none d-md-block">
+        <div class="d-flex justify-content-end">
+          <ul class="nav me-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink=""
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="contact-us">Contact Us</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary">Get Qoute</button>
+        </div>
+      </div>
+      <div class="col d-block d-sm-block d-md-none">
+        <div class="d-flex justify-content-end">
+          <i style="font-size: 36px" class="bi bi-list"></i>
+        </div>
       </div>
     </div>
   </div>

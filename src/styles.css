@@ -30,6 +30,11 @@ h1 {
   font-weight: 600;
   line-height: 1;
 }
+@media (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+  }
+}
 h2 {
   font-size: 32px;
   font-weight: 600;

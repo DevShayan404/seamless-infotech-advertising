@@ -11,3 +11,13 @@ nav .container .row {
   color: #3c3c3c;
   font-weight: 500;
 }
+nav .container .row img.image-fluid {
+  width: 240px;
+}
+
+@media (max-width: 576px) {
+  nav .container .row img.image-fluid {
+    width: 200px;
+    /* padding: 0 0 0 10px; */
+  }
+}
