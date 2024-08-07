@@ -10,10 +10,10 @@
 }
 @media (max-width: 576px) {
   .banner-main {
-    padding: 120px 0 0;
+    padding: 120px 0 140px;
   }
 }
-.banner-main h6 {
+.banner-main h6 span {
   background: #fff;
   padding: 4px 10px;
   width: max-content;
