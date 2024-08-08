@@ -37,6 +37,6 @@ li a:hover {
 }
 @media (max-width: 576px) {
   .footer-second img.image-fluid {
-    width: 180px;
+    width: 200px;
   }
 }

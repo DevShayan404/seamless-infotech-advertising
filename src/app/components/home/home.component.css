@@ -185,6 +185,7 @@
 
 .service-card .inner {
   -webkit-transition: transform 0.5s ease;
+  will-change: transform;
   transition: transform 0.5s ease;
 }
 .service-card:hover .inner {
