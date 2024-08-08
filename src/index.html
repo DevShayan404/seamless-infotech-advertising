@@ -21,12 +21,28 @@
         background: #fff;
         overflow: hidden;
       }
+      .app-loader img {
+        width: 280px;
+        animation: zoom 2s infinite ease-in-out;
+      }
+
+      @keyframes zoom {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
     </style>
   </head>
   <body>
-    <!-- <div class="app-loader">
-      <img width="280" src="assets\images\seamless-logo.png" alt="" />
-    </div> -->
+    <div class="app-loader">
+      <img src="assets/images/seamless-logo.png" alt="Seamless Logo" />
+    </div>
     <app-root></app-root>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>

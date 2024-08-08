@@ -14,6 +14,7 @@
   padding: 4px 10px;
   width: max-content;
   border-radius: 20px;
+  font-size: 12px;
 }
 
 /* ///////////////////////////////////// */
@@ -185,7 +186,6 @@
 
 .service-card .inner {
   -webkit-transition: transform 0.5s ease;
-  will-change: transform;
   transition: transform 0.5s ease;
 }
 .service-card:hover .inner {
