@@ -12,15 +12,15 @@
   margin: 0;
   color: #fff;
 }
-/* .footer-first .container input {
-  color: var(--gray-light);
-} */
 .footer-second .custom {
   background: linear-gradient(130deg, #42b097 49%, #2db5df 100%);
   font-size: 16px;
   border-radius: 100%;
   padding: 10px 14px;
   color: #fff;
+}
+.footer-second img.image-fluid {
+  width: 240px;
 }
 .footer-second p {
   font-size: 12px;
@@ -34,4 +34,9 @@ li a {
 }
 li a:hover {
   color: var(--primary-color);
+}
+@media (max-width: 576px) {
+  .footer-second img.image-fluid {
+    width: 180px;
+  }
 }
