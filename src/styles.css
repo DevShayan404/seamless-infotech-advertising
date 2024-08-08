@@ -12,10 +12,11 @@ body.app-loaded .app-loader {
   font-family: "Fredoka", sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
+  /* -webkit-overflow-scrolling: touch;  */
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 :root {
   --primary-color: #42b097;
