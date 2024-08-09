@@ -13,8 +13,11 @@ nav .container .row {
 }
 nav .container .row img.image-fluid {
   width: 240px;
+  cursor: pointer;
 }
-
+.active {
+  color: var(--primary-color);
+}
 @media (max-width: 576px) {
   nav .container .row img.image-fluid {
     width: 200px;

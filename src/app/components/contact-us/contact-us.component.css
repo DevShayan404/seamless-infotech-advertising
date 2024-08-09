@@ -1,5 +1,5 @@
 .header {
-  min-height: 60vh;
+  min-height: 50vh;
   border-radius: 0 0 50px;
   background: linear-gradient(
     0deg,
@@ -20,7 +20,6 @@
   bottom: 0;
   right: 0;
   transform: translate(-10%, 55%);
-  
 }
 .form-main form {
   border: 1px solid var(--primary-color);
